@@ -6,7 +6,7 @@ const collection = [
        genre: ["Comedie"],
        acteurs: ["Michael Douglas", " Robert De Niro", " Morgan Freeman", " Kevin Kline", " Mary Steenbugen"], 
        resume: "Billy, Paddy, Archie et Sam sont amis depuis 60 ans. Alors qu'il est sur le point de se marier avec une femme qui a moins de la moitié de son âge, Billy invite ses trois comparses à Las Vegas pour un enterrement de vie de garçon. Archie est heureux d'avoir enfin de la liberté et Sam ne pense qu'à s'envoyer en l'air. Il n'y a que Paddy qui hésite, de peur d'envenimer la situation qui est déjà tendue avec Billy. Le quatuor décide malgré tout de se réunir et de faire les 400 coups au casino et dans les discothèques.",
-       photo: "../assets/images/LastVegas.jpg",
+       photo: "assets/images/LastVegas.jpg",
        bandeAnnonce: "https://www.youtube.com/embed/TvK3m0wJutI?si=crnLBUxC54tMRDiy",
     },
     {
