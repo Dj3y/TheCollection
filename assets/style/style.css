@@ -1,44 +1,90 @@
 * {
   margin: 0;
   padding: 0;
-  color: #5B596B;
+  color: #1c1c1c;
 }
 
-section h1, section p {
+section {
+  font-family: "Noticia Text", serif;
+}
+section #pInfo,
+section h1, section h2, section h3, section h4, section h5 {
   padding: 10px;
   text-align: center;
+  font-weight: 500;
+}
+section h1, section h2 {
+  font-family: Lugrasimo, serif;
+  font-weight: 560;
+  font-size: 30px;
 }
 
 #container {
-  width: 95%;
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: justify;
   word-wrap: break-word;
-  margin: 0 auto;
 }
 #container div {
+  background-color: rgba(50, 50, 93, 0.05);
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px, rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
   display: flex;
   flex-direction: column;
-  width: 25%;
   min-height: 200px;
   padding: 30px;
   margin: 30px auto;
+  width: 70%;
 }
-#container img, #container h2, #container h3, #container h4, #container h5, #container p, #container iframe {
+#container h2, #container h3, #container h4, #container h5, #container img, #container p {
   padding: 5px 0;
 }
 #container p {
   min-height: 200px;
 }
 #container img {
-  display: block;
-  width: 250px;
-  margin: 0 auto;
+  height: 40%;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: 10px auto;
 }
-#container video {
-  width: 100px;
+#container iframe {
+  margin-top: 20px;
+  border: none;
+}
+
+@media screen and (min-width: 780px) {
+  #container div {
+    width: 35%;
+  }
+  #container img {
+    height: 30%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #container div {
+    width: 25%;
+  }
+  #container img {
+    height: 30%;
+    filter: grayscale(75%);
+    padding: 0;
+    margin: 10px auto;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  #container img:hover {
+    filter: grayscale(0%);
+    transition: 0.5s;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 5px solid rgb(160, 2, 2);
+    border-bottom: 5px solid rgb(160, 2, 2);
+  }
 }/*# sourceMappingURL=style.css.map */

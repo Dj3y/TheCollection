@@ -110,6 +110,7 @@ function createCard(){
     section.appendChild(h1);
     h1.innerHTML = "Ma collection des films";
     const pInfo =document.createElement("p");
+    pInfo.id = "pInfo";
     section.appendChild(pInfo);
     pInfo.innerHTML = "Vous trouverez sur cette page une partie de ma collection des films. Cette collection va continuer à être enrichie avec le temps.";
     const div = document.createElement("div");
